@@ -1,0 +1,47 @@
+<!-- css visibility => visibility property have three values 
+                    -  visible [by default]
+                    -  hidden [The element is hidden (but still takes up space)]
+                    -  collapse [Only for table rows (<tr>), row groups (<tbody>), columns (<col>), column groups (<colgroup>). This value removes a row or column, but it does not affect the table layout. The space taken up by the row or column will be available for other content.]
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        .a{
+            visibility: visible;
+        }
+        .b{
+            visibility: hidden;
+        }
+        table, th, td{
+            border: 1px solid black;
+        }
+        tr.collapse {
+            visibility: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="a">This heading is visible</h1>
+    <h1 class="b">This heading is hidden</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate modi eius quo ab beatae. Dignissimos alias tempora similique iure blanditiis quam asperiores fugit accusamus quo in recusandae delectus non obcaecati neque earum eius dolorem quibusdam minus tenetur pariatur mollitia saepe, cumque excepturi cum! Voluptatum error tempore beatae consequuntur delectus! Enim, necessitatibus obcaecati laudantium voluptatem autem aliquam tenetur, a beatae quidem facere ullam itaque placeat minus nesciunt praesentium. Assumenda facilis facere reiciendis porro, voluptatum corrupti consectetur autem cumque unde. Rem eligendi eos inventore nisi perspiciatis, ipsa aperiam voluptatibus itaque vero odio dolores mollitia porro quisquam, nesciunt odit facilis soluta! Tempora, voluptatum. Nobis consequuntur tempore laudantium dolor, beatae at animi perspiciatis libero, totam facilis sit. Sed vitae error corrupti commodi eos cumque? Deleniti, iure magni voluptatum iste quam odit rerum est officiis inventore aspernatur eveniet, tempore unde reprehenderit nam culpa amet mollitia earum recusandae temporibus? Iusto distinctio molestiae minima incidunt consequuntur. Aut?</p>
+
+    <table>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+        </tr>
+
+        <tr class="collapse">
+          <td>Lois</td>
+          <td>Griffin</td>
+        </tr>
+
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+    </table>   
+</body>
+</html>

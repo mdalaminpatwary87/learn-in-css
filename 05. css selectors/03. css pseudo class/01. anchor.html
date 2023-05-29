@@ -1,0 +1,41 @@
+<!--  pseudo-class
+    - pseudo-class is used to define a special state of an element.
+    - syntax of pseudo-classes =>
+                               selector:pseudo-class{
+                                                property: value;
+                                }
+    
+    - Here, anchor:pseudo-class                         
+        - css links can be displayed in different ways such as 
+            - a:link    : a normal, unvisited link.
+            - a:visited : a link the user has visited.
+            - a:hover   : a link when the user mouses over it.
+            - a:active  : a link the moment it is clicked.
+
+        - when setting the style for several link states, there are some order rules:
+            - a:hover MUST come after a:link and a:visited.
+            - a:active MUST come after a:hover.
+-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <title>css</title>
+     <style>
+         a:link{
+             color: red;
+         }
+         a:visited{
+             color: green;
+         }
+         a:hover{
+             color: hotpink;
+         }
+         a:active{
+             color: blue;
+         }
+     </style>
+ </head>
+ <body>
+     <a href="#">Google</a>
+ </body>
+ </html>

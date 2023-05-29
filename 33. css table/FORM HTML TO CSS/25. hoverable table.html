@@ -1,0 +1,53 @@
+<!-- 
+  Hoverable Table
+  Use the :hover selector on tr to highlight table rows on mouse over.
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML-TABLE</title>
+    <style>
+        table{
+            border: 2px solid green;
+            border-collapse: collapse;
+        }
+        th,td{
+            border-bottom: 1px solid red;
+            padding: 8px;
+            text-align: left;
+        }
+        tr:hover{
+            background-color: #D6EEEE;;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 100%;">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </table>
+</body>
+</html>

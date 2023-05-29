@@ -1,0 +1,17 @@
+<!-- [attribute|="value"] => [attribute|="value"] selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-). Note: The value has to be a whole word, either alone, like class="top", or followed by a hyphen( - ), like class="top-text" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        [class|=top]{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+</body>
+</html>

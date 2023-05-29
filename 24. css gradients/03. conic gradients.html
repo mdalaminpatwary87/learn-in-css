@@ -1,0 +1,40 @@
+<!--Conic Gradients      => A conic gradient is a gradient with color transitions rotated around a center point. To create a conic gradient you must define at least two colors.
+             Syntax      => background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+             from angle  -  0deg (by default) - If no degree is specified, the colors will be spread equally around the center point.
+                         -  If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom".
+             at position -  center (by default)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+        .box1{
+            background-image: conic-gradient(red, yellow, green);
+            background-image: conic-gradient(from 0deg,red, yellow, green);
+
+            background-image: conic-gradient(from 90deg, red, yellow, green);
+            background-image: conic-gradient(from 180deg, red, yellow, green);
+
+            background-image: conic-gradient(from 0deg at center,red, yellow, green);
+            background-image: conic-gradient(from 90deg at 20% 40%,red, yellow, green);
+
+            background-image: conic-gradient(at 60% 45%, red, yellow, green);
+            
+            
+            background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+
+            background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div> 
+</body>
+</html>

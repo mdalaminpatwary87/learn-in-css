@@ -1,0 +1,30 @@
+<!--
+    - background-origin property that specifies the starting position of a background image or color within an element.
+    
+    - background-origin have some property values:
+        - padding-box : This is the default value, and it means that the background image or color starts from the padding edge of the element.
+        - border-box  : This value specifies that the background image or color should start from the border edge of the element.
+        - content-box : This value specifies that the background image or color should start from the content edge of the element.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css</title>
+    <style>
+        .box{
+            padding: 10px;
+            font-family: monospace;
+            border: 6px dashed green;
+            background-image: url(images/img_paper.gif);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Learn CSS</h1>
+        <P>CSS stands for Cascading Style Sheets.CSS is the language we use to style a Web page.</P>
+    </div><br>
+</body>
+</html>

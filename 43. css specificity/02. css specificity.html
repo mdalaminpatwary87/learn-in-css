@@ -1,0 +1,45 @@
+<!--CSS Specificity => CSS Specificity হলো সুনিদিষ্ট কিছু রুলসেট যেগুলো দিয়ে কোনো ইলিমেন্ট কোন  স্টাইল এ্যাপ্লাই হবে সেটা নির্ধারণ করা হয়। 
+    Specificity Hierarchy => Every CSS selector has its place in the specificity hierarchy. There are four categories which define the specificity level of a selector.
+                             01. Inline styles - Example: <h1 style="color: pink;">
+                             02. ID Selector - Example: #navbar
+                             03. Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+                             04. Elements (tag) and pseudo-elements selectors - Example: h1, :before
+    Specificity Calculation => Just Remember [IICT - I(inline) I(id) C(class) T(tag) => initial value 0,0,0,0]
+                             01. 
+                             li{} - 0,0,0,1 => one elements(tag)
+                             div.container ul.li{} - 0,0,2,2 => two class and two elements(tag)
+                             li::first-letter{} - 0,0,0,2 => one elements(tag) and one pseudo-elements
+                             #example .item{} - 0,1,1,0 => one id and one class 
+                             div ul li{} - 0,0,0,3 => three elements
+                             div#example .item:hover{} - 0,1,2,1 => one id, one class, one pseudo-classes and one elements
+                             div ul#example li{} - 0,1,0,3 => one id three elements(tag)
+                             <h1 style="color:red";> Hello World </h1> - 1,0,0,0 => one inline style
+                             Note => left er dike jar value beshi se win korbe
+
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-SPECIFICITY</title>
+    <style>
+        /* Remember that combinator selectors does not imfact css epecificity */
+        /* specificity calculation 0,0,0,2 */
+        div > p{
+            color: rgb(224, 10, 231);
+        }
+        /* but when you add class what happend see below */
+        /* specificity calculation 0,0,1,2 */
+        div > p.para{
+            color: blue; 
+        }
+    </style> 
+</head>
+<body>
+    <div>
+        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A optio ab obcaecati nihil cum expedita natus non laborum? Maxime numquam quas itaque asperiores suscipit culpa dolor delectus non corporis nobis consequuntur sequi, eaque saepe, aut vel totam mollitia ipsa voluptatibus possimus dolore beatae id iste? Neque animi, expedita officia magnam soluta quod quas maiores suscipit tenetur? Doloremque, doloribus repellendus, nostrum quasi quisquam quos quia adipisci numquam eos quod in? Vel doloribus sint dolorem voluptate itaque culpa non illum at voluptas. Temporibus esse doloremque provident reiciendis quam laborum quaerat optio explicabo numquam ratione sit a, omnis sint excepturi et quisquam totam?</p>
+    </div>
+</body>
+</html>

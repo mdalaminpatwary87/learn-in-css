@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+.googleFont1{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.googleFont2{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Jost', sans-serif;
+}

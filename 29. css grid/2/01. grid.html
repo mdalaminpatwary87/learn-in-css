@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS GRID</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto; 
+         /* grid-template-columns: 100px 200px 300px 400px; 100px => 1 columns, 200px => 2 columns, 300px => 3 columns, 400px => 4 columns || length (px, %, cm, em, in, mm etc) er mardhome columns er width set kora jay*/
+  
+
+         /* grid-template-rows: 60px 100px 140px 160px; 60px => 1 columns, 100px => 2 columns, 140px => 3 columns, 160px => 4 columns || length (px, %, cm, em, in, mm etc) er mardhome row er hight set kora jay*/
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+         /* eksathe columns & row er gap proterty*/
+         /* grid-gap: 10px 20px; 10px => row gap, 20px => cloumns gap*/
+            
+            /* 
+            justify-content: center;
+            justify-content: start;
+            justify-content: end; 
+            */
+        }
+        .grid-container > div{
+            background-color: chocolate;
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        div.grid_item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            /*eksathe columns-start & end property
+            grid-column: 1 / 3;
+            grid-column: 1/ span 3;*/
+            
+            grid-row-start: 1;
+            grid-row-end: 3;
+            /*eksathe row-start & end property
+            grid-row: 1 / 4;
+            grid-row: 1 / span 4;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid_item1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+    </div>
+</body>
+</html>

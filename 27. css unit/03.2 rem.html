@@ -1,0 +1,48 @@
+<!-- 1rem => 16px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-UNIT</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        .main__para{
+            font-size: 1rem; 
+        }
+        .main__list{
+            font-size: 16px;
+        }
+        .main__list li{
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="main">
+            <p class="main__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eos vitae libero. Soluta adipisci quis dolorem quas, qui totam corrupti. Fugit enim neque amet accusamus? Labore cupiditate, architecto aperiam esse voluptatibus qui laudantium dolorem officia? Ea recusandae est tenetur laboriosam, ex atque distinctio inventore quos qui quisquam animi, temporibus minus numquam unde explicabo voluptate aperiam, incidunt quod dicta voluptatibus doloremque quibusdam exercitationem accusamus! Quas nobis iure facilis, aperiam vero nihil ducimus cumque laborum eveniet nisi deserunt. Voluptatum exercitationem similique officiis assumenda incidunt esse architecto voluptate ut illum doloremque, nisi nihil! Explicabo quisquam nam autem ratione quam incidunt dolorum eveniet atque.</p>
+        </div>
+        <ul class="main__list"> <!--16px-->
+            <li>Item One</li> <!--40px-->
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li><!--40px-->
+                <ul class="main__list__two">
+                    <li>Item One</li> <!--40px-->
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                    <li><!--40px-->
+                        <ol class="main__list__three">
+                            <li>Item One</li><!--40px-->
+                            <li>Item Two</li>
+                            <li>Item Three</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>  

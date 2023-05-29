@@ -1,0 +1,40 @@
+<!--
+    - we can use any percentage between from 0% to 100% such as 25%,50%,75%.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            animation: anyName 4s ease 0s 4 alternate;
+        }
+        @keyframes anyName{
+            0%{
+                background-color: #10A37F;
+                transform: scale(1);
+            }
+            50%{
+                background-color: #00E676;
+                transform: scale(0.5);
+            }
+            100%{
+                background-color: #1194F4;
+                transform: scale(1.5)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-COUNTER</title>
+    <style>
+        /*01: Firstly Counter-reset must be define body, Remember that any name we choice for counter reset without space between two name like:*/
+        body{
+            counter-reset: section;
+        }
+        /* 02: we can use ::before and ::after pesudo elements, when add number before elements we use ::before, when add number after elements we use ::after*/
+        h2::after{
+            /* 03:  counter-increment: use Counter-reset name this section*/
+            counter-increment: section;
+            /* 04. write content: "prefix(AnyText) " counter(Counter-reset name)": "; */
+            content: " - Section "counter(section)"  ";
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; color: green; font-family: verdana;">Using CSS Counters!</h1>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>JavaScript Tutorial</h2>
+    <h2>Python Tutorial</h2>
+    <h2>SQL Tutorial</h2>
+</body>
+</html>

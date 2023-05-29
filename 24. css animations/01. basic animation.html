@@ -1,0 +1,87 @@
+<!-- 
+    - animations allow to add visual effects and animations to our website without using JavaScript.
+    - create an animation in css use the @keyframes rule to define the animation, and then use the animation property to apply it to an element.
+    - here some animation property: 
+                                  - animation-name                              (specify the name of the animation that you want to apply to an element which is the name of the @keyframes rule that defines the animation)
+                                  - animation-duration                          (specify the length of time it takes for an animation to complete one cycle)
+                                  - animation-delay                             (specifies a delay before the animation starts)
+                                  - animation-iteration-count
+                                                            - positive integer  (the animation will repeat that number of times)
+                                                            - infinite          (the animation will repeat indefinitely)
+                                  - animation-direction
+                                                            - normal            (the animation plays forwards from the beginning to the end (default))
+                                                            - reverse           (the animation plays backwards from the end to the beginning)
+                                                            - alternate         (the animation plays forwards and then backwards in a repeating cycle)
+                                                            - alternate-reverse (the animation plays backwards and then forwards in a repeating cycle)
+                                  - animation-timing-function
+                                                            - ease              (starts slowly, accelerates in the middle, and then slows down again towards the end.)
+                                                            - ease-in           (starts slowly and then accelerates towards the end)
+                                                            - ease-out          (starts quickly and then slows down towards the end)
+                                                            - ease-in-out       (starts slowly, accelerates in the middle, and then slows down again towards the end)
+                                                            - liner             (starts slowly and ends slowly same speed from start to end)
+
+                                  - animation-fill-mode                         (specifies how the element should be styled before and after the animation is played)
+                                                            - none              (the default value, where the element will not be affected by the animation before or after it is played)
+                                                            - backwards         (the element will adopt the style values of the first keyframe when the animation starts)
+                                                            - forwards          (the element will retain the style values of the last keyframe when the animation ends)
+                                                            - both              (the element will adopt the style values of the first keyframe when the animation starts, and retain the style values of the last keyframe when the animation ends)
+
+                                  - animation-play-state                        (used to control whether an animation is running or paused. This property is particularly useful when you want to give users the ability to pause or resume an animation)
+                                                            - running           (the default value, where the animation is playing normally)
+                                                            - paused            (the animation is paused and will remain in its current state until it is resumed)
+
+                                  - shorthand property animation: 
+                                                            - animation-name
+                                                            - animation-duration
+                                                            - animation-timing-function
+                                                            - animation-delay
+                                                            - animation-iteration-count
+                                                            - animation-direction
+                                                            - animation-fill-mode
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            animation-name: anyName;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+            animation-fill-mode: both;
+            animation: anyName 3s ease 2s infinite alternate both;
+            /* animation-play-state: running; */
+            /* animation-play-state: paused; */
+        }
+        @keyframes anyName{
+            from{
+                background-color: #10A37F;
+                transform: scale(1);
+            }
+            to{
+                background-color: #1194F4;
+                transform: scale(1.5)
+            }
+        }
+        .box:hover{
+            /* animation-play-state: paused; */
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

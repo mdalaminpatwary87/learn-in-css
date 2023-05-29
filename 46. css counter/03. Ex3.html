@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-COUNTER</title>
+    <style>
+        body{
+            counter-reset: section 4; /*use number in this section 4 means start -> 5*/
+        }
+        h2::before{
+            counter-increment: section;
+            content: "Section "counter(section)" : ";
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; color: green; font-family: verdana;">Using CSS Counters!</h1>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>JavaScript Tutorial</h2>
+    <h2>Python Tutorial</h2>
+    <h2>SQL Tutorial</h2>
+    <h2>SQL Tutorial</h2>
+</body>
+</html>

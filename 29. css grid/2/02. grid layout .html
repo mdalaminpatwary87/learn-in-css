@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .grid_container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .grid_container > div{
+            background-color: gray;
+            border: 1px solid black;
+            padding: 30px;
+            text-align: center;
+            font-weight: bold; 
+        }
+        div.header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-column: 1 / 4;
+            grid-column: 1 / -1;
+            grid-column: 1 / span 3;
+        }
+        div.footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="main">Main</div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!--Radial Gradients     => A radial gradient is defined by its center. To create a radial gradient you must also define at least two color stops.
+              Syntax     => background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+              shape      - ellipse (by default)
+                         - circle
+              size       - farthest-side (by default)
+                         - farthest-corner
+                         - closest-side
+                         - closest-corne     
+             at position -  center (by default)
+                         - horizental
+                         - vertical 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        .box{
+            width: 50%;
+            height: 600px;
+            padding: 10px;
+            font-family: sofia;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .box1{
+            background-image: radial-gradient(red, yellow, green);
+            background-image: radial-gradient(ellipse farthest-side at center,red, yellow, green);
+            background-image: radial-gradient(circle farthest-corner at 10% 10%,red, yellow, green);
+            background-image: radial-gradient(circle closest-side at 10% 10%,red, yellow, green);
+            background-image: radial-gradient(circle closest-corner at 50% 10%,red, yellow, green);
+
+            background-image: radial-gradient(red 20%, yellow 30%, green);
+            background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <h1>CSS Tutorial</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga officiis error excepturi, aliquid numquam at quasi quos quis id, ex aperiam? Voluptatibus iste repudiandae nobis quasi voluptas odio minima libero minus magni optio ut ullam sunt sit exercitationem hic quo ipsum unde praesentium nam, iure enim et? Laborum aut quos atque recusandae accusantium, mollitia nisi repellendus veritatis eligendi aperiam fugit sapiente tempora dolores explicabo rem qui earum voluptatum omnis voluptate impedit consequuntur reiciendis, libero est? Dolorem perferendis nobis obcaecati consequatur voluptates, rem natus iste esse ipsum aperiam nemo. Vitae eum eveniet est officia aliquid consequatur sint, animi explicabo impedit?</p>
+    </div> 
+</body>
+</html>

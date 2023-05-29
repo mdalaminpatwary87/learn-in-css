@@ -1,0 +1,24 @@
+<!--CSS !important Rule => The !important rule in CSS is used to add more importance to a property/value than normal. In fact, if we use the !important rule, it will override ALL previous styling rules for that specific property on that element!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* specificity calculation 0,1,0,0 */
+        #demo{
+            color: blue;
+        }
+        /* specificity calculation 0,0,1,0 */
+        .test{
+            color: green;
+        } 
+        /* specificity calculation 0,0,0,1 */
+        p{
+            color: red !important; /*  all three paragraphs will get a red color, even though the ID selector and the class selector have a higher specificity. The !important rule overrides the color property in both cases.*/
+        } 
+    </style>
+</head>
+<body>
+    <p id="demo" class="test" style="color: pink;">Hello World!</p>
+</body>
+</html>

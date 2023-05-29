@@ -1,0 +1,15 @@
+<!-- :lang Pseudo-class => The :lang pseudo-class allows you to define special rules for different languages. In the example below, :lang defines the quotation marks for <q> elements with lang="no": -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        q:lang(no) {
+            quotes: "-" "-";
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello <q lang="no">Happy Birthday</q></h1>
+</body>
+</html>

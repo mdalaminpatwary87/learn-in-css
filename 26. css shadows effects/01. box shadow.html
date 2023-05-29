@@ -1,0 +1,34 @@
+<!-- 
+    - box-shadow is a property that allows to add a shadow effect to an html element.
+    - basic syntax for using the box-shadow => box-shadow: h-shadow v-shadow blur spread color inset;
+        - h-shadow  : The horizontal offset of the shadow from the element. A positive value moves the shadow to the right, while a negative value moves it to the left.
+        - v-shadow  : The vertical offset of the shadow from the element. A positive value moves the shadow down, while a negative value moves it up.
+        - blur      : The amount of blur to apply to the shadow. A larger value creates a more blurred shadow.
+        - spread    : The amount of spread to apply to the shadow. A positive value expands the shadow, while a negative value shrinks it.
+        - color     : The color of the shadow.
+        - inset (optional): If present, the shadow will be inset inside the element instead of outside.
+    - basic syntax for using multiple box-shadow values by separating them with commas => box-shadow: h-shadow1 v-shadow1 blur1 spread1 color1, h-shadow2 v-shadow2 blur2 spread2 color2, ...
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css</title>
+    <style>
+        .box1{
+            width: 400px;
+            height: 250px;
+            background-color: #23374b;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 6px 6px 10px 5px rgb(36, 40, 44);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

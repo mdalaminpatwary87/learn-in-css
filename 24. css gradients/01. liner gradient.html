@@ -1,0 +1,65 @@
+<!--Gradients => Gradients display smooth transitions between two or more specified colors. CSS defines three types of gradients are: 
+              -  Linear Gradients (goes down/up/left/right/diagonally)
+              -  Radial Gradients (defined by their center)
+              -  Conic Gradients (rotated around a center point)
+
+
+    CSS Linear Gradients => To create a linear gradient you must define at least two color stops.
+                  Syntax => background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+                         -  Direction - top to bottom (this is default)
+                         -  Direction - bottom to top
+                         -  Direction - left to right
+                         -  Direction - right to left 
+                         -  Direction - Diagonally. You can make a gradient diagonally by specifying both the horizontal and vertical starting positions are: 
+                                      - top left to bottom right
+                                      - bottom right to top left
+                                      - top right to bottom left
+                                      - bottom left to top right
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        .box{
+            width: 50%;
+            height: 600px;
+            padding: 10px;
+            font-family: sofia;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .box1{
+            /* gradient syntax and direction */
+            background-image: linear-gradient(to bottom, red, green, yellow);
+            background-image: linear-gradient(to top,red, green, yellow);
+            background-image: linear-gradient(to right,red, green, yellow);
+            background-image: linear-gradient(to left,red,green, yellow);
+
+            /* diagonal gradient colors  */
+            background-image: linear-gradient(to bottom right,red, green, yellow);
+            background-image: linear-gradient(to top left,red, green, yellow);
+            background-image: linear-gradient(to bottom left,red, green, yellow);
+            background-image: linear-gradient(to top right,red, green, yellow);
+
+            /* gradient using transparency colors */
+            background-image: linear-gradient(to right, rgba(0, 255, 0,0),yellow);
+            background-image: linear-gradient(to right, rgba(0, 255, 0,1),rgba(255, 0, 0,0.5));
+
+            /* if we want we set color density of gradient claculate 100% */
+            background-image: linear-gradient(to bottom,red 20%, green 30%, yellow 50%);
+            background-image: linear-gradient(to bottom,red 20%, green 30%, yellow);
+
+            /* if we want repeating gradient colors */
+            background-image: repeating-linear-gradient(to bottom,red, green 10%, yellow 20%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <h1>CSS Tutorial</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga officiis error excepturi, aliquid numquam at quasi quos quis id, ex aperiam? Voluptatibus iste repudiandae nobis quasi voluptas odio minima libero minus magni optio ut ullam sunt sit exercitationem hic quo ipsum unde praesentium nam, iure enim et? Laborum aut quos atque recusandae accusantium, mollitia nisi repellendus veritatis eligendi aperiam fugit sapiente tempora dolores explicabo rem qui earum voluptatum omnis voluptate impedit consequuntur reiciendis, libero est? Dolorem perferendis nobis obcaecati consequatur voluptates, rem natus iste esse ipsum aperiam nemo. Vitae eum eveniet est officia aliquid consequatur sint, animi explicabo impedit?</p>
+    </div>
+</body>
+</html>

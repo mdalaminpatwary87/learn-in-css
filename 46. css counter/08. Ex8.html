@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-COUNTER</title>
+    <style>
+        body{
+            counter-reset: section; 
+        }
+        h2::before{
+            counter-increment: section; 
+            content: "Section "counter(section)" :";
+            /* style */
+            color: white;
+            background-color: green;
+        }
+        h2{
+            color: tomato;
+            text-decoration: underline;
+            font-family: sofia;
+            background-color: yellowgreen;
+        }
+        p{
+            text-align: justify;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; color: green; font-family: verdana;">Using CSS Counters!</h1>
+    <h2> HTML Tutorial</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nihil, unde ab rem ratione sed amet, libero nostrum ullam sunt praesentium quos officiis reiciendis dolor exercitationem fugiat? Eligendi reiciendis recusandae aspernatur velit soluta quibusdam est voluptas minima autem provident eius atque nam dolor voluptatem obcaecati, dignissimos error suscipit iure! Reiciendis perspiciatis optio consequatur eum, similique, incidunt illum eos iste aspernatur quae cum rem porro facilis dolorem recusandae neque ipsa deleniti est et, laboriosam a reprehenderit velit magni! Labore excepturi, architecto sunt iusto dolore ea veniam dolores fugit, soluta perferendis, doloremque alias nam molestias unde fugiat quod expedita perspiciatis. Laboriosam, beatae!</p>
+    <h2> CSS Tutorial</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non laborum enim iure esse blanditiis ex voluptatum quas, quis veritatis facilis magni praesentium consequatur deleniti id hic officia numquam laudantium voluptate fuga consequuntur maiores voluptates ab molestiae maxime! Facere necessitatibus eum repellat dolores eos in explicabo, nihil autem ab minus architecto totam quibusdam iure perferendis atque quis animi nostrum, temporibus facilis. Exercitationem quidem consequuntur iste nostrum asperiores. Nesciunt optio fuga voluptatem. Corrupti, quod iste vitae consequatur reprehenderit amet tempora inventore vero excepturi delectus adipisci id corporis soluta sed officia similique optio exercitationem velit officiis nesciunt quisquam quam fugiat natus debitis. Quod.</p>
+    <h2> JavaScript Tutorial</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, dignissimos iure non aliquid sunt reiciendis adipisci perferendis tempore, nobis neque, sapiente deleniti! Vero ipsam, accusamus tempore, laudantium hic deleniti culpa quaerat nisi quisquam voluptas impedit eveniet ducimus maiores facilis saepe quia iusto ex. Quas doloremque vel dignissimos nobis culpa recusandae veniam molestias pariatur perferendis aspernatur, amet itaque maiores, sit rem assumenda ad nesciunt? Eaque laudantium ipsum, iure quae expedita sequi? Amet ex cumque ea ut fugit similique porro enim quasi illo alias error inventore, quidem autem tempore unde consequuntur sint eligendi neque rem sequi ducimus deleniti eius libero. Molestias, tempora!</p>
+    <h2> Python Tutorial</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias soluta voluptatibus hic aliquid consequatur. Culpa quaerat est facilis placeat similique? Aliquid, totam ducimus quis commodi impedit ipsa ab quod nesciunt? Sed quia impedit mollitia est ut necessitatibus asperiores, voluptate, odio, nesciunt beatae iure at ad! Dolore voluptates quos ad facere nam? Illo, libero error laborum ea nesciunt ullam eligendi voluptatum dolorem nobis. Officiis delectus deserunt tenetur dignissimos, voluptates ipsa asperiores maiores dolorum placeat sequi! Expedita iste in placeat. Repellat quia blanditiis culpa illo voluptates odio veniam hic neque natus, aliquam, sunt vero iure numquam perferendis voluptas sequi autem beatae distinctio.</p>
+    <h2> SQL Tutorial</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, fuga? Minima qui similique totam est autem itaque aliquam sunt obcaecati voluptas rem odit ad laboriosam atque tempora id, magnam placeat.</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-UNIT</title>
+    <style>
+        .main__list{
+            font-size: 16px;
+        }
+        .main__list li{
+            font-size: 2em;
+        }
+        samp{
+            color: green;
+            background-color: greenyellow;
+            font-size: 1em; /*1rem look differents*/
+        }
+    </style>
+</head>
+<body>
+    <ul class="main__list"> <!--16px-->
+        <li>Item One</li> <!--32px-->
+        <li>Item Two</li>
+        <li>Item Three <samp>Like Me!</samp></li>
+        <li><!--32px-->
+            <ul class="main__list__two">
+                <li>Item One</li> <!--64px-->
+                <li>Item Two</li>
+                <li>Item Three  <samp>Like Me!</samp> </li>
+                <li><!--64px-->
+                    <ol class="main__list__three">
+                        <li>Item One</li><!--128px-->
+                        <li>Item Two</li>
+                        <li>Item Three <samp>Like Me!</samp></li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>  

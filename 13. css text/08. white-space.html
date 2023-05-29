@@ -1,0 +1,41 @@
+<!--
+    - The white-space property is used to control the flow and formatting of text
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        p.nowrap{
+            white-space:nowrap;
+        }
+        p.pre{
+            white-space:pre;
+        }
+        p.pre-line{
+            white-space:pre-line;
+        }
+    </style>
+</head>
+<body>
+    <p class="nowrap">
+        This text has a line break and the white-space pre setting 
+        tells the browser to honor it just like the HTML pre tag.
+        This text has a line break and the white-space pre setting 
+        tells the browser to honor it just like the HTML pre tag.
+        This text has a line break and the white-space pre setting  
+        tells the browser to honor it just like the HTML pre tag.
+    </p>
+    <p class="pre">
+        This text has a line break and the white-space pre setting 
+        tells the browser to 
+        honor it just like the HTML
+                              pre tag.
+    </p>
+     <p class="pre-line">
+        This text    
+        has a    line break and the   white-  space pre   setting 
+        tells the      browser to honor it       just  like the HTML   pre tag.
+     </p>
+</body>
+</html>  

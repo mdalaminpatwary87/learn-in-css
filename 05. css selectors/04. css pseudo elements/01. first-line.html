@@ -1,0 +1,34 @@
+ <!-- Pseudo-elements => A CSS pseudo-element is used to style specified parts of an element. For example, it can be used to:
+                      -  Style the first letter, or line, of an element
+                      -  Insert content before, or after, the content of an element
+                      -  The syntax of pseudo-elements:
+                                                      selector::pseudo-element{
+                                                          property: value;
+                                                       }
+
+      ::first-line    => The ::first-line selector is used to add a style to the first line of the specified selector. Remember that, the ::first-line pseudo-element can only be applied to block-level elements. The following properties can be used with ::first-line: 
+                      -  font properties
+                      -  color properties
+                      -  background properties
+                      -  word-spacing
+                      -  letter-spacing
+                      -  text-decoration
+                      -  vertical-align
+                      -  text-transform
+                      -  line-height
+                      -  clear
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        p::first-line{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more. Lorem ipsum dolor sit amet consectetur, adipisicing elit. At beatae possimus consequuntur mollitia enim dicta veritatis necessitatibus laborum magni laboriosam, nostrum blanditiis ipsa ad aliquam nobis et nam alias fugit officiis sint. Quod odit mollitia omnis illo corporis alias id neque, temporibus numquam aperiam placeat unde inventore dignissimos tempore architecto minima! Quas aperiam illo impedit nihil, minima perferendis. Quasi sunt illum ab alias suscipit facilis eos tenetur, laborum repellendus expedita ex adipisci aut officiis cum laudantium, necessitatibus illo sint saepe rerum neque perferendis quas voluptas architecto. Quisquam enim autem veritatis molestiae perspiciatis ducimus possimus voluptas maiores alias facere ad numquam, amet aspernatur praesentium aliquam repellendus porro harum sit incidunt! Consequuntur voluptates commodi veritatis numquam hic quos nostrum impedit quod natus, libero excepturi fugiat beatae dolorum quam dolorem facilis nobis delectus non. Voluptatibus repellat fuga minima labore, aspernatur omnis nam quisquam. Vitae animi neque fuga facilis maxime explicabo quo, veniam atque?</p>
+</body>
+</html>

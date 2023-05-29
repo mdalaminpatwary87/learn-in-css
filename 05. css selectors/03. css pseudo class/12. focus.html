@@ -1,0 +1,24 @@
+<!-- :focus selector => The :focus selector is used to select the element that has focus.The :focus selector is allowed on elements that accept keyboard events or other user inputs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        input:focus{
+            background-color: greenyellow;
+            padding: 5px;
+            border: 2px solid firebrick;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="firstname">First name</label>
+        <input type="text" name="firstname"><br><br>
+
+        <label for="lastname">Last name</label>
+        <input type="text" name="lastname"><br><br>
+
+        <input type="submit">
+    </form>
+</html>

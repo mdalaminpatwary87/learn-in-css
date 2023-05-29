@@ -1,0 +1,33 @@
+<!--
+    - background-size property is used to control the size of an image in the background.
+
+    - background-size have some property value:
+        - auto    : This is the default value, and it means that the background image will be displayed at its original size.
+        - cover   : This value scales the background image to cover the entire element, while maintaining the aspect ratio. This may cause some parts of the background image to be cropped.
+        - contain : This value scales the background image to fit inside the element, while maintaining the aspect ratio. This may result in empty space around the background image.
+        - specified any css units (px, rem, % etc...) which sets the width and height of the background image such as background-size: 50% 50%;
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css</title>
+    <style>
+        .box{
+            width: 600px;
+            height: 500px;
+            padding: 5px;
+            border: 2px solid gray;
+            background-image: url(images/img_flwr.gif);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Learn CSS</h1>
+         <P>CSS stands for Cascading Style Sheets.CSS is the language we use to style a Web page.</P>
+    </div>
+</body>
+</html>

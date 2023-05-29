@@ -1,0 +1,18 @@
+<!--Equal specificity: the latest rule wins => If the same rule is written twice into the external style sheet, then the latest rule wins-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        h1{
+            color: rebeccapurple;
+        }
+        h1{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+</html>

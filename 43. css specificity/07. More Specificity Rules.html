@@ -1,0 +1,25 @@
+<!--ID selectors have a higher specificity than attribute selectors - Look at the following three code lines-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* the first rule is more specific than the other two, and will therefore be applied. */
+        /* specificity calculation 0,1,0,1 */
+        div#a{
+            background-color: green;
+        }
+        /* specificity calculation 0,1,0,0  */
+        #a{
+            background-color: yellow;
+        }
+        /* specificity calculation 0,0,1,1 */
+        div[id = "a"]{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">This is a div</div>
+</body>
+</html>

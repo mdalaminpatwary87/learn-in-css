@@ -1,0 +1,29 @@
+<!-- 
+    - child selector selects all elements that are the children of a specified element. The following example selects all <p> elements that are children of a <div> element 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css</title>
+    <style>
+        div > p{
+            color: red;
+            font-size: 20px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is heading One</h1>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <p>Paragraph 3 in the div. <!-- not Child but descendant -->
+        </section> 
+        <p>Paragraph 4 in the div.</p>
+    </div>
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+</body>
+</html>

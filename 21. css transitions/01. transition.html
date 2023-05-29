@@ -1,0 +1,44 @@
+<!--
+    - In css transitions allows to change property values smoothly. when mouse over the element then see the css transition effect.
+    - Here some transitions properties: 
+                                      - transition-property (required)
+                                      - transition-duration (required)
+                                      - transition-delay
+                                      - transition-timing-function
+                                                                 - ease (starts slowly, accelerates in the middle, and then slows down again towards the end.)
+                                                                 - ease-in (starts slowly and then accelerates towards the end)
+                                                                 - ease-out (starts quickly and then slows down towards the end)
+                                                                 - ease-in-out (starts slowly, accelerates in the middle, and then slows down again towards the end)
+                                                                 - liner (starts slowly and ends slowly same speed from start to end)
+                                      
+                                      - shorthand property sequcence: 
+                                                                 - transition:
+                                                                      - transition-property (required)
+                                                                      - transition-duration (required)
+                                                                      - transition-delay (optional)
+                                                                      - transition-timing-function (optional)
+-->
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>CSS</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* transition-property: width;       */
+            /* transition-duration: 2s;          */
+            /* transition-delay: 2s;             */
+            /* transition-timing-function: ease; */
+            transition: width 2s 2s ease;    
+        }
+        .box:hover{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

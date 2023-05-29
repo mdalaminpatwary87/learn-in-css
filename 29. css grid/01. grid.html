@@ -1,0 +1,91 @@
+<!-- Grid => 
+          grid-template-columns - auto => remember that, 1 auto means 1 columns, similarly 2 auto means 2 columns and so on... auto also means all columns width equal
+                                - unit [units can be absolute unit or relative unit]
+                                - fr [Fraction units]
+                                - repeat(how many times(3), what(1fr))
+       
+         grid-template-rows     - auto => remember that, 1 auto means 1 rows, similarly 2 auto means 2 rows and so on... auto also means all rows height equal
+                                - unit [units can be absolute unit or relative unit]
+                                - fr [Fraction units]
+                                - repeat(how many times(3), what(1fr))
+         grid-template          - grid-template is a shorthand property for order by grid-template-rows / grid-template-columns
+
+         column-gap             - use for column-gap
+         row-gap                - use for row-gap
+         gap                    - gap is a shorthand property for order by row-gap and column-gap 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #ffd903;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+            column-gap: 5px;
+            row-gap: 5px;
+            gap: 5px 5px;
+        }
+        .item{
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .item-1{
+            background-color: red;
+        }
+        .item-2{
+            background-color: green;
+        }
+        .item-3{
+            background-color: blue;
+        }
+        .item-4{
+            background-color: yellowgreen;
+        }
+        .item-5{
+            background-color: purple;
+        }
+        .item-6{
+            background-color: peru;
+        }
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-1">7</div>
+        <div class="item item-3">8</div>
+        <div class="item item-5">9</div>
+        <div class="item item-6">10</div>
+        <div class="item item-2">11</div>
+        <div class="item item-3">12</div>
+        <div class="item item-1">13</div>
+        <div class="item item-2">14</div>
+        <div class="item item-3">15</div>
+        <div class="item item-4">16</div>
+        <div class="item item-5">17</div>
+        <div class="item item-6">18</div>
+        <div class="item item-1">19</div>
+        <div class="item item-3">20</div>
+        <div class="item item-5">21</div>
+        <div class="item item-6">22</div>
+        <div class="item item-2">23</div>
+        <div class="item item-3">23</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-FORMS</title>
+    <style>
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            outline: none;
+            transition: 0.5s;
+        }
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+    </style>
+</head>
+<body>
+    <h2>Input fields with black border on :focus</h2>
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" value="John">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+</body>
+</html>

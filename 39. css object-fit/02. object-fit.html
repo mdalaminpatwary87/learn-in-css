@@ -1,0 +1,83 @@
+<!-- 
+    Here is where the object-fit property comes in. The object-fit property can take one of the following values:
+        fill        - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+        contain     - The image keeps its aspect ratio, but is resized to fit within the given dimension
+        cover       - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+        none        - The image is not resized
+        scale-down  - the image is scaled down to the smallest version of none or contain
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+            grid-gap: 2px;
+            align-items: center;
+        }
+        img{
+            width: 200px;
+            height: 300px;
+        }
+        .fill img{
+            object-fit: fill;
+            border: 1px solid red;
+        }
+        .contain img{
+            object-fit: contain;
+            border: 1px solid red;
+        }
+        .cover img{
+            object-fit: cover;
+            border: 1px solid red;
+        }
+        .none img{
+            object-fit: none;
+            border: 1px solid red;
+        }
+        .scale-down img{
+            object-fit: scale-down;
+            border: 1px solid red;
+        }
+    </style>
+ </head>
+ <body>
+    <!-- originial image width 400px height 300px -->
+    <img src="IMAGE/paris.jpg" alt="parisCity" style="width: 400px; height: 300px;">
+    
+    <div class="container">
+        <!-- object-fit: পূরণ করা; প্রদত্ত মাত্রা পূরণ করতে চিত্রটির আকার পরিবর্তন করা হয়। প্রয়োজন হলে, চিত্রটি প্রসারিত বা মাপসই করা হবে। -->
+        <div class="fill">
+            <img src="IMAGE/paris.jpg" alt="parisCity">
+            <h1>Fill</h1>
+        </div>
+        
+        <!-- object-fit: contain; চিত্রটি তার আকৃতির অনুপাত বজায় রাখে, তবে প্রদত্ত মাত্রার মধ্যে ফিট করার জন্য আকার পরিবর্তন করা হয়। -->
+        <div class="contain">
+            <img src="IMAGE/paris.jpg" alt="parisCity">
+            <h1>contain</h1>
+        </div>
+
+        <!-- If we use object-fit: cover; the image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit: -->
+        <div class="cover">
+            <img src="IMAGE/paris.jpg" alt="parisCity">
+            <h1>cover</h1>
+        </div>
+
+        <!-- object-fit: none; the image is not resized -->
+        <div class="none">
+            <img src="IMAGE/paris.jpg" alt="parisCity">
+            <h1>none</h1>
+        </div>
+
+        <!-- object-fit: scale-down; the image is scaled down to the smallest version of none or contain  -->
+        <div class="scale-down">
+            <img src="IMAGE/paris.jpg" alt="parisCity">
+            <h1>scale-down</h1>
+        </div>
+    </div>
+ </body>
+ </html>

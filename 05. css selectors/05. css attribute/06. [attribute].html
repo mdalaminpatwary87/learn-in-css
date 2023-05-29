@@ -1,0 +1,21 @@
+<!-- [attribute ~="value"] => [attribute~="value"] selector is used to select elements with an attribute value containing a specified word -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        [title ~="flower"]{
+            border: 5px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- The following example selects all elements with a title attribute that contains a space-separated list of words, one of which is flower -->
+    <img src="img/img_tree.gif" title="flower" width="200" height="358"><br>
+    <img src="img/img_flwr.gif" title="summer flower" width="224" height="162"><br>
+    <img src="img/klematis.jpg" title="flower klematis" width="150" height="113"><br>
+    <img src="img/klematis.jpg" title="my-flower" width="150" height="113"><br>
+    <img src="img/klematis.jpg" title="flowers" width="150" height="113"><br>
+    <!--The example above will match elements with title="flower", title="summer flower", and title="flower new", but not title="my-flower" or title="flowers". -->
+</body>
+</html>

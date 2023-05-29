@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-COUNTER</title>
+    <style>
+        /* use use number both for counter-reset &  counter-increment then firstly addition (5+5=10)then start 10, lastly increments 10 + 5 => 15 , 15 + 5 =>20 & go on*/
+        body{
+            counter-reset: section 5; 
+        }
+        h2::before{
+            counter-increment: section 5; 
+            content: "Section "counter(section)" : ";
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; color: green; font-family: verdana;">Using CSS Counters!</h1>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>JavaScript Tutorial</h2>
+    <h2>Python Tutorial</h2>
+    <h2>SQL Tutorial</h2>
+    <h2>SQL Tutorial</h2>
+</body>
+</html>

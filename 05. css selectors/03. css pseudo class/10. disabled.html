@@ -1,0 +1,24 @@
+<!-- :disabled => The :disabled selector matches every disabled element (mostly used on form elements) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>     
+        input:disabled{
+            background-color: rgb(180, 180, 180);
+        }      
+    </style>
+</head>
+<body>
+    <form>
+        <label for="firstname">First name</label>
+        <input type="text" name="firstname" value="Mickey"><br><br>
+
+        <label for="firstname">Last name</label>
+        <input type="text" name="firstname" value="Mouse"><br><br>
+
+        <label for="firstname">Country</label>
+        <input type="text" value="Disneyland" disabled="disabled"><br><br>
+    </form>
+</body>
+</html>

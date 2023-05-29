@@ -1,0 +1,29 @@
+<!-- 
+    - :root is a pseudo-class that targets the root element of the document, which is usually the html element.
+    - syntax: :root{
+
+    }
+    - css variables also known as css custom properties, var() function is used to insert the value of a css like a variable.
+    - syntax:var(--name, value) 
+            -  name	 : required. The variable name must begin with two dashes (--) and it is case sensitive!
+            -  value : optional. The fallback value (used if the variable is not found)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css</title>
+    <style>
+        :root {
+            --main-color: #006699;
+            --secondary-color: #ffcc00;
+        }
+        h1{
+            color: var(--main-color);
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+</html>

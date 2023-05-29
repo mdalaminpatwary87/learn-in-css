@@ -1,0 +1,29 @@
+<!--
+    - background-clip property that specifies how the background image or color of an element should be clipped.
+    
+    - background-clip have some property values:
+        - border-box  : This is the default value, and it means that the background image or color applies to the entire element, including the border and padding.
+        - padding-box : This value specifies that the background image or color should only apply to the padding area of the element, but not the border.
+        - content-box : This value specifies that the background image or color should only apply to the content area of the element, but not the padding or border.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css</title>
+    <style>
+        .box{
+            padding: 10px;
+            font-family: monospace;
+            border: 6px dashed green;
+            background-color: red;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Learn CSS</h1>
+        <P>CSS stands for Cascading Style Sheets.CSS is the language we use to style a Web page.</P>
+    </div><br>
+</body>
+</html>

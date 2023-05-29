@@ -1,0 +1,48 @@
+<!--Relative unit => Relative units specify a length relative to another length property it depends parent. Relative units are: em, rem, vh, vw, %,ch,vmax,vmin,ex.
+    em      [Multiplies his patent. Relative to the font-size of the element (2em means 2 times the size of the current font)]
+    rem     [Relative to font-size of the root element. Multiplies root elements]
+    vh      [Relative to 1% of the height of the viewport*]
+    vw      [Relative to 1% of the width of the viewport*]
+    %       [Relative to the parent element]
+    vmax    []
+    vmin    []
+    ch      []
+    ex      []
+    The em and rem units are practical in creating perfectly scalable layout! * Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-UNIT</title>
+    <style>
+        body{
+            font-size: 16px;
+        }
+        .hero__parent{
+            font-size: 20px;
+        }
+        .parent{
+            font-size: 32px;
+        }
+        .child{
+            /*
+            01. First e dekhbe tar imediate parent er font-size ache kina jodi thake setai hobe 1em. Jemon parent er font-size 32px --> 1em => 32px, r 2em mane holo 32px * 2 = 64px | 0.5em mane holo 32 * 0.5 = 16px.
+            02. R jodi na thake tahole tar imediate parent er font-size ache kina check korbe jodi thake setai hobe 1em. Jemon hero__parent er font-size 25px --> 1em => 25px, r 2em mane holo 25px * 2 = 50px | 0.5em mane holo 25 * 0.5 = 12.5px.
+            03. R jodi seta o na thake tahole se body er font-size nibe r seta hobe 1em. Jemon body er font-size 16px --> 1em => 16px, r 2em mane holo 16px * 2 = 32px | 0.5em mane holo 16 * 0.5 = 8px. 
+            */
+            font-size: 2em; 
+        }
+    </style>
+</head>
+<body>
+    <div class="hero__parent">
+        <p>I'm Hero Parent</p>
+        <div class="parent">
+            <p>Hello World. My Font Size Is 32px</p>
+            <div class="child">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eos vitae libero. Soluta adipisci quis dolorem quas, qui totam corrupti. Fugit enim neque amet accusamus? Labore cupiditate, architecto aperiam esse voluptatibus qui laudantium dolorem officia? Ea recusandae est tenetur laboriosam, ex atque distinctio inventore quos qui quisquam animi, temporibus minus numquam unde explicabo voluptate aperiam, incidunt quod dicta voluptatibus doloremque quibusdam exercitationem accusamus! Quas nobis iure facilis, aperiam vero nihil ducimus cumque laborum eveniet nisi deserunt. Voluptatum exercitationem similique officiis assumenda incidunt esse architecto voluptate ut illum doloremque, nisi nihil! Explicabo quisquam nam autem ratione quam incidunt dolorum eveniet atque.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>  

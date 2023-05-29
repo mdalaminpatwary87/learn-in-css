@@ -1,0 +1,27 @@
+<!-- 
+    - general sibling selector selects all elements that are next siblings of a specified element. The following example selects all <p> elements that are next siblings of <div> elements 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        div ~ p{
+            color: red;
+            font-size: 20px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <p>Paragraph 1</p>
+    <div>
+        <p>Paragraph 2</p>
+    </div>
+    <p>Paragraph 3</p>
+    <code>Some code.</code>
+    <p>Paragraph 4</p>
+    <span>Hello World</span>
+    <p>Paragraph 5</p>
+</body>
+</html>

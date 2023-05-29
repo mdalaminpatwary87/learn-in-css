@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+       .blink{
+            color: red;
+            background-color: yellowgreen;
+            padding: 10px;
+            position: absolute;
+            top: 25px;
+            visibility: hidden;
+        }
+        .link:hover .blink { /* must use space when add tooltip selectors otherwise tooltip not works */
+            visibility: visible;
+        }
+     
+        p{
+            background-color: yellowgreen;
+            padding: 20px;
+            display: none;
+        }
+        div:hover p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="link">Facebook
+         <span class="blink">Facebook is a social media!</span>
+    </a>
+    <br><br>
+
+    <div>Hover over me to show the p element
+        <p>Tada! Here I am!</p>
+    </div>
+</body>
+</html>

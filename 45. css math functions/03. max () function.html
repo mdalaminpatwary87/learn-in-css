@@ -1,0 +1,37 @@
+<!--max() Function => The max() function uses the largest value, from a comma-separated list of values, as the property value.
+                      max(value1, value2, ...)
+                      Value	          :   Description
+                      value1, value2, :	Required. A list of comma-separated values - where the largest value is chosen
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <title>CSS-Math Functions</title>
+     <style>
+        .main__class{
+            background-color: yellowgreen;
+            width: max(50%, 500px);
+        }
+        .parent{
+            width: 600px;
+            border: 1px solid red;
+        }
+        .child{
+            width: max(50%, 350px);
+            background-color: yellow;
+        }
+     </style>
+ </head>
+ <body>
+    <div class="main__class">
+        <h1>Hello World</h1>
+    </div>
+
+    <div class="parent">
+        <div class="child">
+            <h1>Hello World</h1>
+        </div>
+    </div>
+ </body>
+ </html>
+ 

@@ -1,0 +1,23 @@
+<!--
+    - attribute ^="value" selector is used to select elements with the specified attribute, whose value starts with the specified value.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        [class ^="top"]{
+            font-size: 20px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="top-header">Welcome</h1>
+    <p class="top text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    <p class="this-top content">This is not work.</p>
+    <p class="this top content">This is not work.</p>
+    <p class="thistop content">This is not work.</p>
+</body>
+</html>

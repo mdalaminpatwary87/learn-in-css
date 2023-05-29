@@ -1,0 +1,39 @@
+<!--The CSS math functions allow mathematical expressions to be used as property values. Here, we will explain the calc(), max() and min() functions. It use margin, padding, font-size, bod-shadow,width etc.  -->
+
+<!--calc() Function => The calc() function performs a calculation to be used as the property value.
+                       calc(expression) 
+                       Value        :	Description
+                       expression	:   Required. A mathematical expression. The result will be used as the value. The following operators can be used: + - * /
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS-Math Functions</title>
+    <style>
+        .box1{
+            background-color: yellowgreen;
+            height: 50vh;
+            width: 50%;                     /* normal width: 50%; */
+            width: calc(50% + 100px);       /* width: 50% + 100px; bolte bujano hoice browser er 50% width nibe tarpor 50% tarpor 100px addition kore dibe */
+            width: calc(50% - 100px);       /* width: 50% - 100px; bolte bujano hoice browser er 50% width nibe tarpor 50% tarpor 100px subtract kore dibe */
+            width: calc(50% * 2);           /* same as width: 100%; */
+            width: calc(50% / 2);           /* same as width: 25%; */
+        }
+        .box2{
+            background-color: green;
+            text-align: justify;
+            font-size: 20px;
+            line-height: 1.5;
+            width: calc(100% - 4px - 20px - 20px - 4px); /* same as width: calc(100% - 48px); this is remove all border extra. Fllowing the box model*/
+            border: 4px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div><br><br>
+    <div class="box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sit iusto voluptatibus placeat sint? Maiores perspiciatis esse nulla atque accusantium odio ex sequi doloremque voluptate est eveniet, quis alias, ducimus magnam aliquid nostrum odit laudantium eius neque debitis tempora totam. Eos obcaecati laudantium similique doloremque facilis voluptatibus reprehenderit, molestiae dolorum excepturi hic quae accusamus, enim temporibus iure sed ad ipsum dicta consectetur! Aperiam quam maxime cupiditate praesentium facilis nulla optio reiciendis ipsa. Fugit qui provident optio molestias voluptate, quisquam voluptates libero non, delectus laborum eveniet enim reprehenderit labore quae maiores expedita odio voluptas porro consectetur fugiat dicta tempore. Et, tenetur maxime atque architecto quae nobis dolores quam temporibus excepturi totam asperiores blanditiis debitis similique aliquid ut reiciendis tempora aspernatur dignissimos sed. Libero voluptate excepturi nam cumque reiciendis delectus, eligendi soluta magni sequi fugit! Minima dolorem nulla laborum eum voluptatibus. Impedit rerum sed nisi inventore distinctio assumenda aperiam. Hic, distinctio quis!</p>
+    </div>
+</body>
+</html>

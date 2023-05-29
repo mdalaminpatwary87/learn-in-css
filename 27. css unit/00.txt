@@ -1,0 +1,9 @@
+    Absolute size:
+        01. Sets the text to a specified size
+        02. Does not allow a user to change the text size in all browsers (bad for accessibility reasons)
+        03. Absolute size is useful when the physical size of the output is known. 
+
+    Relative size:
+        01. Sets the size relative to surrounding elements
+        02. Allows a user to change the text size in browsers
+        Note: If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).

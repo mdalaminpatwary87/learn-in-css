@@ -1,0 +1,31 @@
+<!-- 
+    - skew(x-angle, y-angle): skews the element by a given angle in degrees on both the X-axis and Y-axis.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transition-duration: 3s;
+        }
+        .box:hover{
+            transform: skewX(20deg);
+            transform: skewY(20deg);
+            transform: skew(20deg, 20deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Hello world</div>
+</body>
+</html>

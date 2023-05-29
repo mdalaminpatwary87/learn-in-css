@@ -1,0 +1,40 @@
+<!-- 
+   object-position Property =>  অবজেক্ট-পজিশন প্রপার্টি ব্যবহার করা হয় কিভাবে একটি <img> বা <video> এর কন্টেইনারের মধ্যে অবস্থান করা উচিত তা নির্দিষ্ট করতে।
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .cover{
+            width: 400px;
+            height: 300px;
+            border: 1px solid green;
+        }
+        .cover img{
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            /* Let's say that the part of the image that is shown, is not positioned as we want. To position the image, we will use the object-position property.*/
+            /* Here we will use the object-position property to position the image so that the great old building is in center */
+            object-position: 80% 100%;
+            /* Here we will use the object-position property to position the image so that the famous Eiffel Tower is in center: */
+            object-position: 15% 100%;
+            /* aslo use */
+            object-position:left;
+            object-position:right;
+            object-position: center;
+            object-position: bottom;
+            object-position: top;
+        }
+    </style>
+</head>
+<body>
+    <!-- Look at the following image from Paris, which is 400x300 pixels: -->
+    <img src="IMAGE/paris.jpg" alt="parisCity" style="width: 400px; height: 300px;">
+    <!-- we use object-fit: cover; to keep the aspect ratio and to fill the given dimension. -->
+    <div class="cover">
+        <img src="IMAGE/paris.jpg" alt="parisCity">
+    </div>
+</body>
+</html>

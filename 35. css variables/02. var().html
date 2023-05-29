@@ -1,0 +1,22 @@
+<!-- 
+    - if inside :root css variable is not found then second value works.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css</title>
+    <style>
+        :root{
+            /* --main-color: #006699; */
+            --secondary-color: #ffcc00;
+        }
+        h1{
+            color: var(--main-color,red);
+            background-color: var(--secondary-color,green);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+</html>

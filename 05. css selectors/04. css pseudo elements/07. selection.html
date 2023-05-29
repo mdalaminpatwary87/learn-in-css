@@ -1,0 +1,25 @@
+<!-- ::selection => ::selection selector matches the portion of an element that is selected by a user. Only a few CSS properties can be applied to the ::selection selector: color, background, cursor, and outline.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>    
+        ::selection{
+            color: white;
+            background-color: blue; 
+        }
+
+        p::selection {
+            color: red;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select some text on this page:</h1>
+    <h2>Select some text on this page:</h2>
+    <div>This is some text in a div element.</div>
+    
+    <!--The following example makes the selected text red on a black background-->
+    <p>This is a paragraph.</p>
+</html>

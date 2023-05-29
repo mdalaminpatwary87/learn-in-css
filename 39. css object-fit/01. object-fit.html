@@ -1,0 +1,17 @@
+<!-- 
+    object-fit Property => 
+        অবজেক্ট-ফিট প্রপার্টি ব্যবহার করা হয় কিভাবে একটি <img> বা <video> এর কন্টেইনারে ফিট করার জন্য মাপ পরিবর্তন করা উচিত। সুতরাং একটি <img> বা <video> এর কন্টেইনারে ফিট করার জন্য কিভাবে আকার পরিবর্তন করা উচিত তা নির্দিষ্ট করতে CSS অবজেক্ট-ফিট প্রপার্টি ব্যবহার করা হয়।
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- This image is 400 pixels wide and 300 pixels high -->
+    <img src="IMAGE/paris.jpg" alt="parisCity">
+    <!-- However, if we style the image above to be half its width (200 pixels) and same height (300 pixels), it will look like this -->
+    <img src="IMAGE/paris.jpg" alt="parisCity" style="width: 200px; height: 300px;"> <!-- We see that the image is being squished to fit the container of 200x300 pixels (its original aspect ratio is destroyed). -->
+</body>
+</html>

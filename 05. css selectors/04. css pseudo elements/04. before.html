@@ -1,0 +1,22 @@
+<!-- ::before selector => The ::before selector inserts something before the content of each selected element(s). Use the content property to specify the content to insert-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        h1::before{
+            content: url(img/smiley.gif);
+        }
+        p::before{
+            content: " Read this -";
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p> My name is Donald</p>
+</body>
+</html>

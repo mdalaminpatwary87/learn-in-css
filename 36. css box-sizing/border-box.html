@@ -1,0 +1,39 @@
+<!--
+    - There are two type of box-sizing => content-box (by deafult) | border-box. Best practics for using border-box unisersal selectors first of the projects
+    - content-box (default): The width and height of the element only include the content, and do not include any padding or border that may be added to the element. This is the default box model used by the browser.
+    - border-box           : The width and height of the element include the content, padding, and border that may be added to the element.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css</title>
+    <style>
+        .box1{
+            text-align: justify;
+            width: 500px;
+            border: 50px solid blue;
+            padding: 50px; 
+            box-sizing: content-box;  
+        }
+        .box2{
+            text-align: justify;
+            width: 500px;
+            border: 50px solid blue;
+            padding: 50px; 
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- here total width: 700. But i set width 500. This problem solve border-box-->
+    <div class="box box1">
+        <h1>Learn css</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, modi explicabo consectetur laborum odio repudiandae quibusdam doloremque alias rerum maxime.</p>
+    </div><br><br>
+
+    <!-- here total width: 500. See difference inspect chrome and see box model-->
+    <div class="box box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illum. Quas praesentium provident temporibus voluptas facere placeat consequatur hic id?</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* specificity calculation 0,1,0,0 */
+        #demo{
+            color: orange;
+        }
+        /* specificity calculation 0,0,1,0 */
+        .test{
+            color: green;
+        }
+        /* specificity calculation 0,0,0,1 */
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo" class="test" style="color:violet;">Hello World!</p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- ::after Selector => The ::after selector inserts something after the content of each selected element(s).Use the content property to specify the content to insert.
+               Syntax =>
+                     ::after{
+                         content:"";
+                         css declarations;
+                     }
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        h1::after{
+            content: url(img/smiley.gif);
+        }
+        p::after{
+            content: " - Hello David";
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading </h1>
+    <p>My name is Donald</p>
+</body>
+</html>

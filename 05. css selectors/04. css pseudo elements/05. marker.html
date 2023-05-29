@@ -1,0 +1,32 @@
+<!-- ::marker Selector => The ::marker selector selects the marker of a list item. This selector works on any element set to display:list-item -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <style>
+        ul ::marker{ /* must be use space otherwise do not works properly */
+            color: red;
+            font-size: 23px;
+        }
+        ol ::marker{
+            color: green;
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+    <h1>List 1</h1>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+      
+    <h1>List 2</h1>
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+</body>
+</html>

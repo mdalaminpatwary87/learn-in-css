@@ -1,0 +1,40 @@
+<!--
+    - combinators selectors are used to select html elements based on their relationship. 
+    - Here there are four different combinators in css:
+        -  descendant selector (space)
+        -  child selector (>)
+        -  adjacent sibling selector (+)
+        -  general sibling sele
+    - Explaination:
+        - descendant-Selector : The descendant selector matches all elements that are descendants of a specified element. The following example selects all <p> elements inside <div> elements.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>css</title>
+        <style>
+            div p{
+                color: red;
+                font-size: 20px;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+<body>
+    <div>
+        <h1>This is Heading One</h1>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <p>Paragraph 3 in the div.</p>
+            <p>Paragraph 4 in the div.</p>
+        </section>
+    </div>
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+</body>
+</html>
+
+
+
+
